@@ -1,7 +1,14 @@
 /* * {
-
   outline: 1px solid red;
 } */
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --second-fond-family: 'Roboto', sans-serif;
+  --color-menu-hover: #1abc9c;
+  --color-menu: #0f0101;
+  --color-top-menu: #fff;
+}
 
 html {
   box-sizing: border-box;
@@ -19,15 +26,87 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #515151;
+  font-size: 14px;
 }
 
-/* Header menu */
+/* Top header */
 .container {
-  width: 1110px;
-  margin: 0 auto;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tell-mail {
+  display: flex;
+}
+
+.header-top {
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1abc9c;
+}
+
+.list {
+  list-style: none;
+}
+
+.mail-link {
+  padding-left: 65px;
+}
+
+.phone-link,
+.mail-link {
+  font-family: var(--font-family);
+  color: var(--color-top-menu);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  display: flex;
+}
+
+.phone-link::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/header-icons/tell.png);
+  background-repeat: no-repeat;
+}
+
+.mail-link::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin-right: 4px;
+  background-image: url(../images/icons/header-icons/mail.png);
+  background-repeat: no-repeat;
+}
+
+.page-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.page-menu__item {
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+.page-menu__link {
+  display: block;
+  font-family: var(--font-family);
+  color: var(--color-top-menu);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 11px;
+  text-decoration: none;
 }
 
 img {
@@ -36,20 +115,8 @@ img {
   height: auto;
 }
 
-.header {
-  padding-top: 38px;
-  padding-bottom: 32px;
-  text-transform: uppercase;
-}
-
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-.logo a {
-  font-family: "Roboto", sans-serif;
+/* .logo {
+  font-family: 'Roboto', sans-serif;
   color: #555252;
   font-size: 30px;
   line-height: 32px;
@@ -60,17 +127,13 @@ img {
 }
 
 .logo a::first-letter {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   color: #1abc9c;
 }
 
-ul {
-  list-style: none;
-}
-
 .menu__navigation {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -125,7 +188,7 @@ ul {
 }
 
 .foto__slider::before {
-  content: "";
+  content: '';
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -142,14 +205,14 @@ ul {
 }
 
 .slider__name h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 60px;
   line-height: 82px;
   font-weight: 900;
 }
 
 .slider__name h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 54px;
   font-weight: 300;
@@ -216,7 +279,7 @@ ul {
 }
 
 .name__card {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 48px;
   line-height: 32px;
   font-weight: 900;
@@ -227,7 +290,7 @@ ul {
 
 .name__card::after {
   display: block;
-  content: "";
+  content: '';
   width: 165px;
   height: 7px;
   margin: 33px auto 84px;
@@ -280,8 +343,8 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-[class^="pe-7s-"],
-[class*=" pe-7s-"] {
+[class^='pe-7s-'],
+[class*=' pe-7s-'] {
   color: #fff;
   font-size: 30px;
   line-height: 48px;
@@ -322,7 +385,7 @@ ul {
 }
 
 .cart {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
@@ -357,7 +420,7 @@ ul {
   float: left;
   padding-left: 15px;
   width: 200px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 40px;
@@ -370,7 +433,7 @@ ul {
 .products .price {
   display: block;
   width: 55px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 40px;
@@ -398,7 +461,7 @@ ul {
 }
 
 address.container {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fefefe;
   font-size: 16px;
   line-height: 28px;
