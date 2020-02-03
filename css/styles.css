@@ -126,7 +126,6 @@ img {
   letter-spacing: -0.6px;
   font-weight: 300;
   text-decoration: none;
-  display: flex;
   margin-right: auto;
   text-transform: uppercase;
 }
@@ -134,7 +133,8 @@ img {
 .logo::first-letter {
   font-family: var(--second-fond-family);
   font-weight: 900; 
-  cursor: var(--color-menu-hover);
+  letter-spacing: -1px;
+  color: var(--color-menu-hover);
 }
 
 .nav {
