@@ -9,6 +9,7 @@
   --color-menu: #0f0101;
   --color-top-menu: #fff;
   --color-logo: #555252;
+  --color-products: #e9f0fd;
 }
 
 html {
@@ -314,4 +315,31 @@ img {
   letter-spacing: -0.28px;
   text-indent: initial;
   margin-bottom: 80px;
+}
+
+/* <!-- New Collection --> */
+
+.collection {
+  background-color: var(--color-products);
+  text-transform: uppercase;
+  padding-bottom: 100px;
+}
+
+.heading {
+  font-family: var(--second-fond-family);
+  font-size: 48px;
+  line-height: 32px;
+  letter-spacing: -0.28px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.heading::after {
+  display: block;
+  content: '';
+  width: 165px;
+  height: 16px;
+  margin: 28px auto 77px;
+  background-image: url(/images/icons/title-line.jpg);
 }
