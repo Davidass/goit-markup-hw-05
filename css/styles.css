@@ -345,7 +345,7 @@ img {
   height: 16px;
   margin: 0 auto;
   margin-top: 28px;
-  background-image: url('/images/icons/title-line.jpg');
+  background-image: url('../images/icons/title-line.jpg');
 }
 
 .products-card {
